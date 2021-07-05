@@ -1,0 +1,66 @@
+docker ps --all
+docker system prune
+
+sudo docker image ls --all
+sudo docker image prune --all
+
+
+docker build -t atb/simpleweb:latest .
+
+docker run -p 8080:8080 atb/simpleweb
+
+
+docker start 70b88e2b230e
+docker stop 70b88e2b230e
+
+--------------
+
+docker exec -it 70b88e2b230e sh
+
+-----------
+
+docker build .
+
+
+>>>>> Successfully built fef65bab41e3
+
+
+sudo docker run -it fef65bab41e3
+
+
+sudo docker image ls --all
+
+//docker exec -it docker_id sh
+
+docker ps --all
+docker system prune
+
+
+sudo docker image prune --all
+
+
+
+------------
+
+
+docker run -it atb/simpleweb sh
+
+----------------
+
+
+docker-compose up
+docker-compose up --build
+
+
+http://192.168.253.134:4001/
+
+=======
+
+
+docker-compose -d
+docker-compose down
+
+-------------
+
+docker-compose ps
+
