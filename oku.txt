@@ -49,18 +49,15 @@ docker run -it atb/simpleweb sh
 
 
 docker-compose up
-docker-compose up --build
+docker-compose up --build -d
 
 
-http://192.168.253.134:4001/
+http://192.168.116.132:4001/
 
-=======
-
-
-docker-compose -d
-docker-compose down
 
 -------------
+
+docker-compose down
 
 docker-compose ps
 
